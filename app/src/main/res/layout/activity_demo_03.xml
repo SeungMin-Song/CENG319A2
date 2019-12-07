@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".demo_03">
+
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher_03"
+        android:layout_width="341dp"
+        android:layout_height="309dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:inAnimation="@android:anim/slide_in_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272">
+
+
+        <Button
+            android:id="@+id/btn_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Press Button (Previous Button)"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Click Button       (Next Button)"
+            android:textSize="30sp" />
+    </ViewSwitcher>
+
+    <Button
+        android:id="@+id/btn_pre"
+        android:layout_width="92dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to home screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+</android.support.constraint.ConstraintLayout>

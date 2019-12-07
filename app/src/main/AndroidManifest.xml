@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.CENG319.ceng319assignment2" >
+    package="com.CENG319.ceng319assignment2">
 
     <application
         android:allowBackup="true"
@@ -8,8 +8,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".demo_04"
+            android:label="ViewSwitcher_Demo_04_Multi"
+            />
+        <activity android:name=".demo_03"
+            android:label="ViewSwitcher_Demo_03_ButtonView"
+            />
+        <activity
+            android:name=".demo_02"
+            android:label="ViewSwitcher_Demo_02_TextView" />
+        <activity
+            android:name=".demo_01"
+            android:label="ViewSwitcher_Demo_01_ImageView" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
