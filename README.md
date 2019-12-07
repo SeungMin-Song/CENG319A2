@@ -18,7 +18,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## An Example Project(Demo)
 
-[![Watch the video](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.mp4)](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.mp4)
+[![Watch the video](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.jpg)](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.gif)
   
 ## The Code
 
