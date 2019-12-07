@@ -1,9 +1,15 @@
 
 # ViewSwitcher - by. Seung Min Song
 ## The Intoduction
+
 On Android, ViewSwitcher is a subclass of ViewAnimator used for switching between views. Element of the transition widget that helps to add a transition to the view. It is primarily useful for animate views on the screen. ViewSwitcher smoothly transitions between two views (e.g. TextView, ImageView or any layout), so it provides a way to switch from one view to another with proper animation. You can use the factory or add your own to create a view for the ViewSwitcher widget.
 
+ViewSwitcher just can get 2 views in one viewSwitcher. If you include more than 2 views in one ViewSwitcher, it will show eorror message even if build is fine.
+
 ## The History
+
+I cannot find specific intoruduced date.
+ViewSwicher is subclass of VuewAnimater. It's origin is java.lang.Object.
 
 ```
 java.lang.Object
@@ -17,44 +23,40 @@ java.lang.Object
 ## The Major methods/attributes
 
 <h4>import android.widget.ViewSwitcher;</h4>
-
+Before we uses ViewSwitcher, we need to import android.widget.ViewSwitcher.
 ```
-import android.widget.ViewSwitcher;
+   import android.widget.ViewSwitcher;
 ```
 
 <h4>private ViewSwitcher viewSwitcher;</h4>
-
+Declare ViewSwitcher variable.
 ```
-private ViewSwitcher viewSwitcher;
+   ViewSwitcher viewSwitcher;
 ```
 
 <h4>showNext();</h4>
-
+This methods(Function) shows up next view. 
 ```
-//change view to next view(In demo_01, change image to next image)
-
-btnNext.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-          viewSwitcher.showNext();
-      }
-});
+   //change view to next view(In demo_01, change image to next image)
+   btnNext.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View view) {
+             viewSwitcher.showNext();
+         }
+   });
 ```
 
 <h4>showPrevious();</h4>
-
+This methods(function) shows up previous view.
 ```
-//change view to previous view(In demo_01, change image to previous image)
-btnPre.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        viewSwitcher.showPrevious();
-    }
-});
+   //change view to previous view(In demo_01, change image to previous image)
+   btnPre.setOnClickListener(new View.OnClickListener() {
+       @Override
+       public void onClick(View view) {
+           viewSwitcher.showPrevious();
+       }
+   });
 ```
-
-
-
 
 ## An Example Project(Demo)
 It is Demo of ViewSwitcher. Before you run ViewSwitcher Demo project, please watch this gif.
