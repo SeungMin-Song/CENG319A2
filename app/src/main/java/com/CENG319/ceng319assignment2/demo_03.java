@@ -61,7 +61,7 @@ public class demo_03 extends AppCompatActivity {
         btn_01 = findViewById(R.id.btn_01);
         btn_02 = findViewById(R.id.btn_02);
     }
-    public void toastMsg(String msgToast){
+    private void toastMsg(String msgToast){
         Toast toast = Toast.makeText(this,msgToast,Toast.LENGTH_LONG);
         toast.show();
     }
