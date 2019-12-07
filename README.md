@@ -19,8 +19,9 @@ End with an example of getting some data out of the system or using it for a lit
 ## An Example Project(Demo)
 
 <vidoo controls>
-  source src="https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.mp4" tupe="video/mp4">
-  </video>
+  <source src="https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.mp4" tupe="video/mp4">
+ </video>
+  
 ## The Code
 
 Explain what these tests test and why
