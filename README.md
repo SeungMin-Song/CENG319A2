@@ -18,7 +18,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## An Example Project(Demo)
 
-<vidoo controls>
+<vidoo with="320" height="240" controls>
   <source src="/ForREADME.md/ViewSwitcher_Demo.mp4" tupe="video/mp4">
  </video>
   
