@@ -24,18 +24,21 @@ java.lang.Object
 
 <h4>import android.widget.ViewSwitcher;</h4>
 Before we uses ViewSwitcher, we need to import android.widget.ViewSwitcher.
+
 ```
    import android.widget.ViewSwitcher;
 ```
 
 <h4>private ViewSwitcher viewSwitcher;</h4>
 Declare ViewSwitcher variable.
+
 ```
    ViewSwitcher viewSwitcher;
 ```
 
 <h4>showNext();</h4>
 This methods(Function) shows up next view. 
+
 ```
    //change view to next view(In demo_01, change image to next image)
    btnNext.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +51,7 @@ This methods(Function) shows up next view.
 
 <h4>showPrevious();</h4>
 This methods(function) shows up previous view.
+
 ```
    //change view to previous view(In demo_01, change image to previous image)
    btnPre.setOnClickListener(new View.OnClickListener() {
