@@ -5,6 +5,8 @@
 On Android, ViewSwitcher is a subclass of ViewAnimator used for switching between views. Element of the transition widget that helps to add a transition to the view. It is primarily useful for animate views on the screen. ViewSwitcher smoothly transitions between two views (e.g. TextView, ImageView or any layout), so it provides a way to switch from one view to another with proper animation. You can use the factory or add your own to create a view for the ViewSwitcher widget.
 
 ViewSwitcher just can get 2 views in one viewSwitcher. If you include more than 2 views in one ViewSwitcher, it will show eorror message even if build is fine.
+  ![error msg](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/error_msg.PNG)
+
 
 ## The History
 
@@ -67,6 +69,7 @@ It is Demo of ViewSwitcher. Before you run ViewSwitcher Demo project, please wat
 
 ![gif demo](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.gif)
   
+
 ## The Code
 This is sample code of how to use the ViewSwitcher
 ### Demo_01 Code
