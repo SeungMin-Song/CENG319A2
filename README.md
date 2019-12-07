@@ -1,7 +1,4 @@
-# CENG319A2
-ViewSwitcher
-
-# Project Title
+# CENG319A2 - ViewSwitcher by.Seung Min Song(N01234892)
 
 One Paragraph of project description goes here
 
