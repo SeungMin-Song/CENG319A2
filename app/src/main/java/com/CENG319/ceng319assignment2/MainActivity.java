@@ -10,18 +10,17 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button demo01;
-    private Button demo02;
-    private Button demo03;
-    private Button demo04;
-    private Button endApp;
+    private Button demo01,demo02,demo03,demo04,endApp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Find all of view by id
         findAllView();
 
+        //Move MainActivity screen to Demo_01 screen
         demo01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_demo01);
             }
         });
+
+        //Move MainActivity screen to Demo_02 screen
         demo02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_demo02);
             }
         });
+
+        //Move MainActivity screen to Demo_03 screen
         demo03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_demo03);
             }
         });
+
+        //Move MainActivity screen to Demo_04 screen
         demo04.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_demo04);
             }
         });
+
+        //Finish application
         endApp.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override

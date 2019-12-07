@@ -20,6 +20,7 @@
         app:layout_constraintVertical_bias="0.272">
 
         <LinearLayout
+            android:id="@+id/view_01"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -34,7 +35,7 @@
                 android:id="@+id/text_pre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="This is 1st multi views(image, text, button)"
+                android:text="This is 1st multi items view(image, text, button)"
                 android:textColor="@android:color/background_dark"
                 android:textIsSelectable="false"
                 android:textSize="18sp" />
@@ -42,13 +43,14 @@
             <Button
                 android:id="@+id/btn_04"
                 android:layout_width="match_parent"
-                android:layout_height="105dp"
+                android:layout_height="85dp"
                 android:text="Press Button(Previous button)"
                 android:textSize="18sp" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/view_02"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -60,18 +62,18 @@
                 app:srcCompat="@drawable/ryan_04" />
 
             <TextView
-                android:id="@+id/text_text"
+                android:id="@+id/text_next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="This is 2nd multi views(image, text, button)"
+                android:text="This is 2nd multi item view(image, text, button)"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_05"
                 android:layout_width="match_parent"
-                android:layout_height="106dp"
-                android:text="Press Button(Previous button)"
+                android:layout_height="83dp"
+                android:text="Click Button(Next button)"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -114,4 +116,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.894" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:text="We can put multi items in one view using layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
 </android.support.constraint.ConstraintLayout>

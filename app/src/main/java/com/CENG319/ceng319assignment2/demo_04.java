@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.widget.ViewSwitcher;
 
+//Demo_04 displays 3 items(image, button, text) in one view using layer
 public class demo_04 extends AppCompatActivity {
     private Button btnPre,btnNext,btnBack,btn_04,btn_05;
     private ViewSwitcher viewSwitcher;
@@ -15,8 +16,10 @@ public class demo_04 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo_04);
 
+        //Find all of view by id
         findAllView();
 
+        //change view to next view(In demo_04, change image to next image)
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,13 +27,7 @@ public class demo_04 extends AppCompatActivity {
             }
         });
 
-        btn_04.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                toastMsg("First(Previous) Button is pressed!");
-            }
-        });
-
+        //change view to previous view(In demo_04, change image to previous image)
         btnPre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,12 +35,23 @@ public class demo_04 extends AppCompatActivity {
             }
         });
 
+        //When press button(previous button) is pressed, message is toasted.
+        btn_04.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toastMsg("First(Previous) Button is pressed!");
+            }
+        });
+
+        //When click button(next button) is clicked, message is toasted.
         btn_05.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 toastMsg("Second(Next) Button is clicked!");
             }
         });
+
+        //Back to main screen
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,6 +70,8 @@ public class demo_04 extends AppCompatActivity {
         btn_04 = findViewById(R.id.btn_04);
         btn_05 = findViewById(R.id.btn_05);
     }
+
+    //Function for toast message
     private void toastMsg(String msgToast){
         Toast toast = Toast.makeText(this,msgToast,Toast.LENGTH_LONG);
         toast.show();

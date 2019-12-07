@@ -14,8 +14,10 @@ public class demo_01 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo_01);
 
+        //Find all of view by id
         findAllView();
 
+        //change view to next view(In demo_01, change image to next image)
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,6 +25,7 @@ public class demo_01 extends AppCompatActivity {
             }
         });
 
+        //change view to previous view(In demo_01, change image to previous image)
         btnPre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,6 +33,7 @@ public class demo_01 extends AppCompatActivity {
             }
         });
 
+        //Back to main screen
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
