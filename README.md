@@ -18,10 +18,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## An Example Project(Demo)
 
-<vidoo with="320" height="240" controls>
-  <source src="/ForREADME.md/ViewSwitcher_Demo.mp4" tupe="video/mp4">
-  <source src="/ForREADME.md/ViewSwitcher_Demo.ogg" type="video/ogg">
- </video>
+[![Watch the video](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.mp4)](https://youtu.be/T-D1KVIuvjA)
   
 ## The Code
 
