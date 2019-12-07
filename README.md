@@ -59,6 +59,7 @@ It is Demo of ViewSwitcher. Before you run ViewSwitcher Demo project, please wat
 This is sample code of how to use the ViewSwitcher
 ### Demo_01 Code
 <h3>layout(xml file)</h3>
+
 ```
   <ViewSwitcher
         android:id="@+id/viewSwitcher_01"
@@ -78,7 +79,6 @@ This is sample code of how to use the ViewSwitcher
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ryan_02" />
-
 
         <ImageView
             android:id="@+id/imageView2"
