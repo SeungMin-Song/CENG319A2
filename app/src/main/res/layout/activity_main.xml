@@ -72,7 +72,7 @@
         android:id="@+id/btm_demo04"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Demo_04_viewswitcher(multi items view)"
+        android:text="Demo_04_viewswitcher(layout)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

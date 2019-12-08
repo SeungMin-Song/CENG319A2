@@ -35,7 +35,7 @@
                 android:id="@+id/text_pre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="This is 1st multi items view(image, text, button)"
+                android:text="This is 1st layout with image, text, button"
                 android:textColor="@android:color/background_dark"
                 android:textIsSelectable="false"
                 android:textSize="18sp" />
@@ -43,7 +43,7 @@
             <Button
                 android:id="@+id/btn_04"
                 android:layout_width="match_parent"
-                android:layout_height="85dp"
+                android:layout_height="106dp"
                 android:text="Press Button(Previous button)"
                 android:textSize="18sp" />
 
@@ -65,7 +65,7 @@
                 android:id="@+id/text_next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="This is 2nd multi item view(image, text, button)"
+                android:text="This is 2nd layout with image, text, button"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 

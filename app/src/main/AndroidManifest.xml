@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".demo_04"
-            android:label="ViewSwitcher_Demo_04_Multi_Item"
+            android:label="ViewSwitcher_Demo_04_Layout"
             />
         <activity android:name=".demo_03"
             android:label="ViewSwitcher_Demo_03_ButtonView"
