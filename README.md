@@ -193,7 +193,7 @@ example code)
 ## An Example Project(Demo)
 It is Demo of ViewSwitcher. It is diffrent project with step. In this example project, you can test four of demo that using diffrent child views. Before you run ViewSwitcher Demo project, please watch this gif.
 
-![gif demo](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.gif)
+![gif file 4 of demo](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_4ofDemo.gif)
   
 ## The Code of project Demo
 This is sample code of how to use the ViewSwitcher
