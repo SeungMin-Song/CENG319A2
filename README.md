@@ -202,7 +202,7 @@ It is Demo of ViewSwitcher. It is diffrent project with step. In this example pr
 
 Unlike the step project, my demo project consists of one main activity and four demo activities, so I have a lot of code, so I will put just java code with xml link.
 
-### MainActivity - MainActivity.java has five buttons. The top four buttons are associated with each demo, and the last one is the button to exit the application.
+### MainActivity.java - MainActivity.java has five buttons. The top four buttons are associated with each demo, and the last one is the button to exit the application.
 
 activity_main.xml: https://github.com/SeungMin-Song/CENG319A2/blob/master/app/src/main/res/layout/activity_main.xml
 
@@ -284,6 +284,216 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
+```
+
+### Demo_01.java: demo_01.java is an activity that tests the ViewSwitcher with two ImageViews.
+
+activity_demo_01.xml: https://github.com/SeungMin-Song/CENG319A2/blob/master/app/src/main/res/layout/activity_demo_01.xml
+
+```
+package com.CENG319.ceng319assignment2;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ViewSwitcher;
+
+public class demo_01 extends AppCompatActivity {
+    private Button btnPre,btnNext,btnBack;
+    private ViewSwitcher viewSwitcher;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_demo_01);
+
+        //Find all of view by id
+        findAllView();
+
+        //change view to next view(In demo_01, change image to next image)
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewSwitcher.showNext();
+            }
+        });
+
+        //change view to previous view(In demo_01, change image to previous image)
+        btnPre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewSwitcher.showPrevious();
+            }
+        });
+
+        //Back to main screen
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+    }
+
+    protected void findAllView(){
+        viewSwitcher = findViewById(R.id.viewSwitcher_01);
+        btnPre = findViewById(R.id.btn_pre);
+        btnNext = findViewById(R.id.btn_next);
+        btnBack = findViewById(R.id.btn_back);
+
+    }
+}
+```
+
+### Demo_02.java: demo_02.java is an activity that tests the ViewSwitcher with two TextViews.
+
+activity_demo_02.xml: https://github.com/SeungMin-Song/CENG319A2/blob/master/app/src/main/res/layout/activity_demo_02.xml
+
+```
+package com.CENG319.ceng319assignment2;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ViewSwitcher;
+
+public class demo_02 extends AppCompatActivity {
+    private Button btnPre,btnNext,btnBack;
+    private ViewSwitcher viewSwitcher;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_demo_02);
+
+        //Find all of view by id
+        findAllView();
+
+        //change view to next view(In demo_02, change image to next image)
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewSwitcher.showNext();
+            }
+        });
+
+        //change view to previous view(In demo_02, change image to previous image)
+        btnPre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewSwitcher.showPrevious();
+            }
+        });
+
+        //Back to main screen
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+
+    }
+
+    protected void findAllView(){
+        viewSwitcher = findViewById(R.id.viewSwitcher_02);
+        btnPre = findViewById(R.id.btn_pre);
+        btnNext = findViewById(R.id.btn_next);
+        btnBack = findViewById(R.id.btn_back);
+
+    }
+}
+```
+
+### Demo_03.java: demo_03.java is an activity that tests the ViewSwitcher with two Buttons.
+
+I added a function to toast the message to show that the button works in the ViewSwitcher. If you press a button, the messages for that button will be displayed.
+
+In the activity_demo_03.xml file, there is a button commented out (id is btn_error). This is a button to check if an error occurs when three views are created in one view pointer. If you want to test three views, remove the comment brackets to test it out.(line 37 - 42 in activity_demo_03.xml)
+
+activity_demo_03.xml: https://github.com/SeungMin-Song/CENG319A2/blob/master/app/src/main/res/layout/activity_demo_03.xml
+
+```
+package com.CENG319.ceng319assignment2;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+import android.widget.ViewSwitcher;
+
+public class demo_03 extends AppCompatActivity {
+    private Button btnPre,btnNext,btnBack,btn_01,btn_02;
+    private ViewSwitcher viewSwitcher;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_demo_03);
+
+        //Find all of view by id
+        findAllView();
+
+        //Change view to next view(in demo_03,change button to next button)
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewSwitcher.showNext();
+            }
+        });
+
+        //change view to previous view(in demo_03, change button to previous button)
+        btnPre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewSwitcher.showPrevious();
+            }
+        });
+
+        //When press button(previous button) is pressed, message is toasted.
+        btn_01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toastMsg("First(Previous) Button is pressed!");
+            }
+        });
+
+        //When click button(next button) is clicked, message is toasted.
+        btn_02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toastMsg("Second(Next) Button is clicked!");
+            }
+        });
+
+        //Back to main screen
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+    }
+
+    protected void findAllView(){
+        viewSwitcher = findViewById(R.id.viewSwitcher_03);
+        btnPre = findViewById(R.id.btn_pre);
+        btnNext = findViewById(R.id.btn_next);
+        btnBack = findViewById(R.id.btn_back);
+        btn_01 = findViewById(R.id.btn_01);
+        btn_02 = findViewById(R.id.btn_02);
+    }
+
+    //Function for toast message
+    private void toastMsg(String msgToast){
+        Toast toast = Toast.makeText(this,msgToast,Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+}
 ```
 
 ## Reference
