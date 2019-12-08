@@ -190,12 +190,14 @@ example code)
 ![Result of step_pre](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_previous_view.PNG)
 ![Result of step_next](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_next_view.PNG)
 
-## An Example Project(Demo)
-It is Demo of ViewSwitcher. It is diffrent project with step. In this example project, you can test four of demo that using diffrent child views. Before you run ViewSwitcher Demo project, please watch this gif.
+## An Example Project(Demo) - https://github.com/SeungMin-Song/CENG319A2
+
+It is Demo of ViewSwitcher. It is diffrent project with step. In this example project, you can test four of demo that using diffrent child views. Before you run ViewSwitcher Demo project, please watch this gif. If you want to watch slowly, download video in here(https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_4ofDemo.gif)
 
 ![gif file 4 of demo](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_4ofDemo.gif)
   
 ## The Code of project Demo
+
 This is sample code of how to use the ViewSwitcher
 
 
