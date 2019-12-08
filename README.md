@@ -35,9 +35,7 @@ java.lang.Object
 ```
 
 ## Major Methods 
-### showNext();
-
-This method(function) shows up next child view. 
+### showNext(); - This method(function) shows up next child view. 
 
 example code)
 
@@ -51,9 +49,7 @@ example code)
    });
 ```
 
-### showPrevious();
-
-This method(function) shows up previous child view.
+### showPrevious(); - This method(function) shows up previous child view.
 
 example code)
 
@@ -70,12 +66,9 @@ example code)
 ## How to Create (Basic steps with major methods) 
 	These are basic steps with major methods.
 	
-### Step_01
+### Step_01: Create project with Empty project.
 
-	Create project with Empty project.
-### Step_02
-
-	 Add ViewSwitcher conponent to activity_main.xml
+### Step_02: Add ViewSwitcher conponent to activity_main.xml
 	
 ```
 	<ViewSwitcher
@@ -92,16 +85,11 @@ example code)
     </ViewSwitcher>
 ```
 	
-### Step_03
-
-	Set the size of the view switcher to the size you want.
+### Step_03: Set the size of the view switcher to the size you want.
 	
 ![set size ViewSwitcher](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/setSizeOfViewSwitcher.PNG)
 
-### Step_04 
-
-	Add 2 child views(ex. Button, ImageView, TextView, layout, and etc) to inside of ViewSwitcher(under of command - <!-- We will put 2 child views in here-->).
-	I put imageView and Button to ViewSwitcher. 
+### Step_04: Add 2 child views(ex. Button, ImageView, TextView, layout, and etc) to inside of ViewSwitcher(under of command - "We will put 2 child views in here"). I put imageView and Button to ViewSwitcher. 
 	
 ```
 		<ImageView
@@ -117,10 +105,7 @@ example code)
             android:text="Button" />
 ```
 
-### Step_05 
-
-	Add 2 button for for showPrevious() method and one for showNext() method.
-	These two button will switch two views.
+### Step_05: Add 2 button for for showPrevious() method and one for showNext() method. These two button will switch two views.
 	
 ```
 	<Button
@@ -146,9 +131,7 @@ example code)
         app:layout_constraintEnd_toEndOf="parent" />
 ```
 
-### Step_06
-
-	Import classes and declare variables in MainActivity.java. After that find views by id what you used in activity_main.xml.
+### Step_06: Import classes and declare variables in MainActivity.java. After that find views by id what you used in activity_main.xml.
 	
 ```
 	// import button, view, and viewSwitcher classes
@@ -178,9 +161,7 @@ example code)
 		btnNext = findViewById(R.id.btn_next);
 ```
 
-### Step_07
-
-	Create code that when Next button is pressed, viewSwitcher switches view to next view
+### Step_07: Create code that when Next button is pressed, viewSwitcher switches view to next view
 
 ```
 	//When next button is pressed, viewSwitcher switches view to next view
@@ -192,9 +173,7 @@ example code)
         });
 ```
 
-### Step_08
-
-	Create code that when previous button is pressed, viewSwitcher switches view to previous view.
+### Step_08: Create code that when previous button is pressed, viewSwitcher switches view to previous view.
 		
 ```
  	//When previous button is pressed, viewSwitcher switches view to Previous view   
@@ -206,18 +185,17 @@ example code)
     });
 ```
 
-### Step_09
-	Build project and run project app.
+### Step_09: Build project and run project app.When you preess Next or Previous button the view will be shage such as pictures
 		
 ![Result of step_pre](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_previous_view.PNG)
 ![Result of step_next](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_next_view.PNG)
 
-### An Example Project(Demo)
+## An Example Project(Demo)
 It is Demo of ViewSwitcher. It is diffrent project with step. In this example project, you can test four of demo that using diffrent child views. Before you run ViewSwitcher Demo project, please watch this gif.
 
 ![gif demo](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_Demo.gif)
   
-#### The Code of project Demo
+## The Code of project Demo
 This is sample code of how to use the ViewSwitcher
 
 
