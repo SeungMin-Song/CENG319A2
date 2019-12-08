@@ -90,6 +90,7 @@ example code)
 	
 ###Step_03
 	Set the size of the view switcher to the size you want.
+	
 	![set size ViewSwitcher](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/setSizeOfViewSwitcher.PNG)
 
 ###Step_04 
@@ -197,6 +198,7 @@ example code)
 
 ###Step_09
 		Build project and run project app.
+		
 		![Result of step_pre](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_previous_view.PNG)
 		![Result of step_next](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_next_view.PNG)
 
