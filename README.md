@@ -1,5 +1,7 @@
 
-# ViewSwitcher - by. Seung Min Song
+# ViewSwitcher
+
+	by. Seung Min Song N01234892
 
 ## The Intoduction
 
@@ -192,14 +194,97 @@ example code)
 
 ## An Example Project(Demo) - https://github.com/SeungMin-Song/CENG319A2
 
-It is Demo of ViewSwitcher. It is diffrent project with step. In this example project, you can test four of demo that using diffrent child views. Before you run ViewSwitcher Demo project, please watch this gif. If you want to watch slowly, download video in here(https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_4ofDemo.gif)
+It is Demo of ViewSwitcher. It is diffrent project with step. In this example project, you can test four of demo that using diffrent child views (ImageView, TextView, Button, Layout). Before you run ViewSwitcher Demo project, please watch this gif. If you want to watch slowly, download video in here(https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_4ofDemo.gif)
 
 ![gif file 4 of demo](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/ViewSwitcher_4ofDemo.gif)
   
 ## The Code of project Demo
 
-This is sample code of how to use the ViewSwitcher
+Unlike the step project, my demo project consists of one main activity and four demo activities, so I have a lot of code, so I will put just java code with xml link.
 
+MainActivity - MainActivity.java has five buttons. The top four buttons are associated with each demo, and the last one is the button to exit the application.
+
+activity_main.xml: https://github.com/SeungMin-Song/CENG319A2/blob/master/app/src/main/res/layout/activity_main.xml
+
+```
+package com.CENG319.ceng319assignment2;
+
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.content.Intent;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button demo01,demo02,demo03,demo04,endApp;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        //Find all of view by id
+        findAllView();
+
+        //Move MainActivity screen to Demo_01 screen
+        demo01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_demo01 = new Intent(MainActivity.this, demo_01.class);
+                startActivity(intent_demo01);
+            }
+        });
+
+        //Move MainActivity screen to Demo_02 screen
+        demo02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_demo02 = new Intent(MainActivity.this, demo_02.class);
+                startActivity(intent_demo02);
+            }
+        });
+
+        //Move MainActivity screen to Demo_03 screen
+        demo03.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_demo03 = new Intent(MainActivity.this, demo_03.class);
+                startActivity(intent_demo03);
+            }
+        });
+
+        //Move MainActivity screen to Demo_04 screen
+        demo04.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_demo04 = new Intent(MainActivity.this, demo_04.class);
+                startActivity(intent_demo04);
+            }
+        });
+
+        //Finish application
+        endApp.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View view) {
+                finishAndRemoveTask();
+            }
+        });
+    }
+
+    protected void findAllView(){
+        demo01 = findViewById(R.id.btn_demo01);
+        demo02 = findViewById(R.id.btm_demo02);
+        demo03 = findViewById(R.id.btm_demo03);
+        demo04 = findViewById(R.id.btm_demo04);
+        endApp = findViewById(R.id.btn_endDemo);
+    }
+}
+
+```
 
 ## Reference
 https://developer.android.com/reference/android/widget/ViewSwitcher
