@@ -30,7 +30,7 @@ java.lang.Object
  	 	 	 	   ↳	android.widget.ViewSwitcher
 ```
 
- Before you use this conponent, you have to import android.widget.ViewSwitcher at top.
+ Before you use this component, you have to import android.widget.ViewSwitcher at top.
 
 ```
 	improt android.widget.ViewSwitcher;
