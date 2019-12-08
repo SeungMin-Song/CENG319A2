@@ -202,7 +202,7 @@ It is Demo of ViewSwitcher. It is diffrent project with step. In this example pr
 
 Unlike the step project, my demo project consists of one main activity and four demo activities, so I have a lot of code, so I will put just java code with xml link.
 
-MainActivity - MainActivity.java has five buttons. The top four buttons are associated with each demo, and the last one is the button to exit the application.
+### MainActivity - MainActivity.java has five buttons. The top four buttons are associated with each demo, and the last one is the button to exit the application.
 
 activity_main.xml: https://github.com/SeungMin-Song/CENG319A2/blob/master/app/src/main/res/layout/activity_main.xml
 
