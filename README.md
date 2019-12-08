@@ -91,7 +91,7 @@ example code)
 ###Step_03
 	Set the size of the view switcher to the size you want.
 	
-	![set size ViewSwitcher](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/setSizeOfViewSwitcher.PNG)
+![set size ViewSwitcher](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/setSizeOfViewSwitcher.PNG)
 
 ###Step_04 
 	Add 2 child views(ex. Button, ImageView, TextView, layout, and etc) to inside of ViewSwitcher(under of command - <!-- We will put 2 child views in here-->).
@@ -199,8 +199,8 @@ example code)
 ###Step_09
 		Build project and run project app.
 		
-		![Result of step_pre](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_previous_view.PNG)
-		![Result of step_next](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_next_view.PNG)
+![Result of step_pre](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_previous_view.PNG)
+![Result of step_next](https://github.com/SeungMin-Song/CENG319A2/blob/master/ForREADME.md/Step_next_view.PNG)
 
 ### An Example Project(Demo)
 It is Demo of ViewSwitcher. It is diffrent project with step. In this example project, you can test four of demo that using diffrent child views. Before you run ViewSwitcher Demo project, please watch this gif.
